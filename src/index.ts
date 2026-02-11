@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Entry point for the Roblox Studio MCP Bridge.
  *

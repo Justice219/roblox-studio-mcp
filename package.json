@@ -1,13 +1,46 @@
 {
-  "name": "roblox-studio-mcp",
+  "name": "@jamesworkbenchcrm/roblox-studio-mcp",
   "version": "1.0.0",
-  "description": "MCP server bridge for Roblox Studio — lets Claude Code manipulate the DataModel via a plugin polling loop",
+  "description": "MCP server that connects AI coding assistants to Roblox Studio — read, create, modify, and delete instances in the DataModel",
   "main": "dist/index.js",
+  "bin": {
+    "roblox-studio-mcp": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "roblox",
+    "roblox-studio",
+    "claude",
+    "ai",
+    "gamedev",
+    "luau"
+  ],
+  "author": "Justice219",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Justice219/roblox-studio-mcp.git"
+  },
+  "homepage": "https://github.com/Justice219/roblox-studio-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Justice219/roblox-studio-mcp/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "plugin/**/*",
+    "plugin.project.json",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",

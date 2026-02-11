@@ -66,6 +66,12 @@ npm install
 npm run build
 ```
 
+Or install directly from npm:
+
+```bash
+npm install -g @jamesworkbenchcrm/roblox-studio-mcp
+```
+
 ### 3. Build and install the Studio plugin
 
 Using Rojo:
@@ -228,6 +234,14 @@ All types use a `{ _type: "TypeName", ... }` JSON format for lossless round-trip
   ```bash
   MCP_BRIDGE_PORT=4000 npm start
   ```
+
+## npm
+
+```bash
+npm install -g @jamesworkbenchcrm/roblox-studio-mcp
+```
+
+https://www.npmjs.com/package/@jamesworkbenchcrm/roblox-studio-mcp
 
 ## License
 
