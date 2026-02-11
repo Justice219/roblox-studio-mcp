@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Justice219/roblox-studio-mcp",
+  "description": "Connect AI assistants to Roblox Studio — manipulate the DataModel with 14 tools",
+  "repository": {
+    "url": "https://github.com/Justice219/roblox-studio-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@jamesworkbenchcrm/roblox-studio-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "HTTP bridge port for Studio plugin communication",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "MCP_BRIDGE_PORT"
+        }
+      ]
+    }
+  ]
+}

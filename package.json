@@ -1,6 +1,7 @@
 {
   "name": "@jamesworkbenchcrm/roblox-studio-mcp",
-  "version": "1.0.0",
+  "mcpName": "io.github.Justice219/roblox-studio-mcp",
+  "version": "1.0.1",
   "description": "MCP server that connects AI coding assistants to Roblox Studio — read, create, modify, and delete instances in the DataModel",
   "main": "dist/index.js",
   "bin": {
