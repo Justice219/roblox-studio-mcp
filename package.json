@@ -1,0 +1,26 @@
+{
+  "name": "roblox-studio-mcp",
+  "version": "1.0.0",
+  "description": "MCP server bridge for Roblox Studio — lets Claude Code manipulate the DataModel via a plugin polling loop",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.7.3"
+  }
+}
